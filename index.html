@@ -5,54 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main_portfolio.css">
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <header>
-        <div id="logo">Header Logo</div>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a class="ref-link" href="#welcome-section">About</a></li>
+            <li><a class="ref-link" href="#projects">Work</a></li>
+            <li><a class="ref-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <!-- section 1: Welcome -->
+        <section class="sections" id="welcome-section">
+            <img src="https://media-exp1.licdn.com/dms/image/C5103AQFSOkb_B5cRAQ/profile-displayphoto-shrink_800_800/0/1567990424651?e=1654732800&amp;v=beta&amp;t=14deFRNwNIQ9z6MqoECTv15Ciw8M0KxzkSdOVCmoxoc" height="300px" width="300px" alt="profile image" id="profile-photo">
+            <h1>Hi, I am Dylan</h1>
+            <p>Aspiring Full-stack developer</p>
+            <p>Tech & Data enthusiast</p>
+        </section>
+        
+        <!-- section 2: Project Portfolios -->
+        <section class="sections" id="projects">
+            <h2 class="project-head">Sample Projects</h2>
+            <!-- provide some links to codepen for projects -->
+            <div class="project-grid">
+                <a href="https://codepen.io/dylanthk/pen/KKZRWWj" class="project-tile">
+                    <img src="https://shots.codepen.io/dylanthk/pen/KKZRWWj-800.jpg?version=1649422316" alt="tribute project" target="_blank" class="project-image">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Technical Document
+                        <span class="code">/></span>
+                    </p>
+                </a>
 
-    <div id="hero">
-        <div id="left">
-            <h1>Welcome! I am Dylan</h1>
-            <p>This website contains some of my experience with web development</p>
-            <button id="resume">Download Resume</button>
-        </div>
-        <div id="right">
-            <!-- To add image of yourself? -->
-            <img src="" alt="Personal Image">
-        </div>
-    </div>
+                <a href="https://codepen.io/dylanthk/pen/QWammKr" class="project-project-title" class="project-tile">
+                    <img src="https://shots.codepen.io/dylanthk/pen/QWammKr-800.jpg?version=1649327844" alt="tribute project" target="_blank" class="project-image">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Landing Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
 
-    <div id="portfolio">
-        <h2>Online Resume</h2>
-        <!-- add images with hyperlinks -->
-        <div id="portfolio-grid">
-            <div id="project-image">1</div>
-            <div id="project-image">2</div>
-            <div id="project-image">3</div>
-        </div>
-    </div>
+                <a href="https://codepen.io/dylanthk/pen/NWXyxyG" class="project-project-title" class="project-tile">
+                    <img src="https://shots.codepen.io/dylanthk/pen/NWXyxyG-800.jpg?version=1649164191" alt="tribute project" target="_blank" class="project-image">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Survey Form
+                        <span class="code">/></span>
+                    </p>
+                </a>
 
-    <div id="quote">
-        <p>“no matter what your ability is, effort is what ignites that ability and turns it into accomplishment.”</p>
-        <p>― Carol S. Dweck, Mindset: The New Psychology Of Success</p>
-    </div>
-
-    <div id="action">
-        <h3>Call to action!</h3>
-        <button id="action-button">Click here</button>
-    </div>
-
-    <footer>
-        <p>Copyright © Dylan Tan The Odin Project 2022</p>
+                <a href="https://codepen.io/dylanthk/pen/Exobdda" class="project-tile">
+                    <img src="https://shots.codepen.io/dylanthk/pen/Exobdda-800.jpg?version=1649083787" alt="tribute project" target="_blank" class="project-image">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+            </div>
+        </section>
+        
+        <section class="sections" id="contact">
+            <div>
+                <h2>Open to work!</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div> <!-- include id=profile-link in github, FCC linkedin links -->
+                <a id="profile-link" href="https://codepen.io/dylanthk" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+                <a id="profile-link" href="https://www.linkedin.com/in/dylan-tan-hong-kuang/" target="_blank" class="btn contact-details"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a id="profile-link" href="mailto:dylantanhk@gmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+            </div>
+        </section>
+    </main>
+    <footer class="bottom">
+            <p>Dylan Tan Hong Kuang 2022</p>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
