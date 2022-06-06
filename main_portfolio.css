@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5rem;
+    /* background-color:darkolivegreen; */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+        /* background-color: black; */
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-items: center;
+    margin-right: 2.5rem;
+}
+
+/* remove underline from header links */
+ul a {
+    text-decoration: none;
+}
+
+li {
+    padding: 15px;
+}
+
+li:hover {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: coral;
+}
+
+#main-doc {
+    text-align: center;
+}
+
+#welcome-section {
+    margin-bottom: 5rem;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* profile picture properties */
+#welcome-section img {
+    border-radius: 50%;
+    margin-top: 7rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.project-head {
+    background-color: coral;
+    width: 100%;
+}
+
+.project-title {
+    padding-bottom: .5em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-grid img {
+    width: 100%;
+}
+
+.project-grid a {
+    color: white;
+    background-color: darkslategray;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* use flex flow to manage grid directions */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    /* background-color: aqua; */
+
+}
+
+#contact {
+    /* background-color: aqua; */
+    height: 20rem;
+}
+
+#contact h2 {
+    padding: .5em;
+    /* background-color: azure; */
+}
+#contact p {
+    margin: 1.5em;
+    /* background-color: azure; */
+}
+
+#contact a{
+    margin: 1em;
+    /* background-color: azure; */
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    background-color:coral;
+
+}
+
+/* design for smaller screens */
