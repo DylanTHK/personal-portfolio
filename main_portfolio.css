@@ -1,3 +1,10 @@
+:root {
+    --primaryColour: coral;
+    --secondaryColour: darkslategray;
+    --darkText: black;
+    --lightText: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,38 +19,38 @@ body {
 @media (max-width: 600px) {
     body {
         font-size: 1rem;
-        /* background-color: black; */
     }
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--darkText);
 }
 
-ul {
+#main-doc {
+    text-align: center;
+}
+
+/* navbar section */
+#navbar-container {
     list-style: none;
-    display: flex;
+    display: flex; /* default flex-directions = rows */
     gap: 2rem;
-    font-size: 1rem;
+    margin-right: 2.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
     justify-items: center;
-    margin-right: 2.5rem;
+    text-decoration: none; /* removes underline from header items*/
 }
 
-/* remove underline from header links */
-ul a {
-    text-decoration: none;
-}
-
-li {
+#navbar-container > li {
     padding: 15px;
 }
 
-li:hover {
+#navbar-container > li:hover {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 #navbar {
@@ -51,31 +58,31 @@ li:hover {
     position: fixed;
     width: 100%;
     justify-content: flex-end;
-    background-color: coral;
+    background-color: var(--primaryColour);
+    height: 4rem;
 }
 
-#main-doc {
-    text-align: center;
-}
-
+/* section 1: Greetings / Welcome section */
 #welcome-section {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     height: 100vh;
     overflow: auto;
 }
 
-/* profile picture properties */
-#welcome-section img {
+#welcome-section img { /* profile image*/
     border-radius: 50%;
     margin-top: 7rem;
 }
 
-h1 {
-    font-size: 3rem;
-}
+/* section 2: About Me */
 
+
+/* section 3: Skills */
+
+
+/* Section 4: Project Portfolios */
 .project-head {
-    background-color: coral;
+    background-color: var(--primaryColour);
     width: 100%;
 }
 
@@ -94,7 +101,7 @@ h1 {
 
 .project-grid a {
     color: white;
-    background-color: darkslategray;
+    background-color: var(--secondaryColour);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -112,31 +119,38 @@ h1 {
 
 }
 
+/* section 5: Certificates */
+
+
+
+/* section 6: Experiences */
+
+
+/* section 7: Contact */
 #contact {
-    /* background-color: aqua; */
     height: 20rem;
 }
 
 #contact h2 {
     padding: .5em;
-    /* background-color: azure; */
 }
 #contact p {
     margin: 1.5em;
-    /* background-color: azure; */
 }
 
 #contact a{
     margin: 1em;
-    /* background-color: azure; */
 }
 
 
-.bottom {
+/* section 8: footer */
+footer {
     display: flex;
-    justify-content: flex-end;
-    background-color:coral;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColour);
 
 }
 
-/* design for smaller screens */
+/* responsive design for smaller screens */
