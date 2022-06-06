@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c532570dbf.js" crossorigin="anonymous"></script>
     <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
@@ -39,7 +35,7 @@
 
         <!-- section 2: About Me -->
         <section class="sections" id="about-section">
-            <h2 class="section-head">About</h2>
+            <h2 class="section-head">ABOUT</h2>
             <div id="about-content">
                 <p>
                     Mechanical Engineer of 3 years in the Air-conditioning and 
@@ -63,7 +59,7 @@
         
         <!-- section 3: Skills -->
          <section class="sections" id="skills-section">
-            <h2 class="section-head">Skills</h2>
+            <h2 class="section-head">SKILLS</h2>
             <div id="skills-content">
                 <a title="Image from freepnglogos.com">
                     <img src="images/html5.png" height="100" alt="html5 logo"/>
@@ -91,7 +87,7 @@
 
         <!-- section 4: Project Portfolios -->
         <section class="sections" id="projects-section">
-            <h2 class="project-head">Projects</h2>
+            <h2 class="project-head">PROJECTS</h2>
             <div class="project-grid">  
                 <a href="" target="_blank" class="project-tile">
                     <h3 class="project-title">
@@ -258,35 +254,64 @@
 
          <!-- section 5: Certificates -->
          <section class="sections" id="certificates-section">
-            <a href="" class="certificate-link">
-                <p class="project-title">
-                    Technical Document
+            <h2>CERTIFICATES</h2>
+            <a href="https://www.freecodecamp.org/certification/DylanTanHK/responsive-web-design" target="_blank" class="certificate-link">
+                <img src="images/fcc.png" style="height:50px" alt="freecodecamp logo">
+                <p class="certification-title">
+                    Responsive Web Design
+                </p>
+            </a>
+            <a href="https://certificates.simplicdn.net/share/3084197.pdf" target="_blank" class="certificate-link">
+                <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
+                <p class="certification-title">
+                    Tableau Desktop 10
+                </p>
+            </a>
+            <a href="https://certificates.simplicdn.net/share/3044505.pdf" target="_blank" class="certificate-link">
+                <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
+                <p class="certification-title">
+                    Data Science with Python
+                </p>
+            </a>
+            <a href="" target="_blank" class="certificate-link">
+                <img src="images/sit.png" style="height:75px" alt="SIT logo">
+                <p class="certification-title">
+                    Masters of Engineering and Technology Sustainable Infrastructure Engineering (Building Services)
                 </p>
             </a>
          </section>
 
           <!-- section 6: Experiences -->
-        <section class="sections" id="experiences-section"></section>
+        <section class="sections" id="experiences-section">
+            <h2>EXPERIENCES</h2>
+            <div id="experiences-content">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
 
         <!-- section 7: Contact -->
         <section class="sections" id="contact-section">
+            <h2>CONTACT</h2>
             <div>
-                <h2>CONTACT</h2>
-                <p>Open to work!</p>
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <p>Open to collaborate and work!</p>
+                <input id="contact-name" type="text" placeholder="Name">
+                <input id="contact-email" type="text" placeholder="Email">
+                <input id="contact-message" type="text" placeholder="Message">
             </div>
             <div> <!-- include id=profile-link in github, FCC linkedin links -->
-                <a id="profile-link" href="https://codepen.io/dylanthk" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-                <a id="profile-link" href="https://www.linkedin.com/in/dylan-tan-hong-kuang/" target="_blank" class="btn contact-details"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a id="profile-link" href="mailto:dylantanhk@gmail.com" target="_blank" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+                <a id="profile-link" href="https://codepen.io/dylanthk" target="_blank" class="btn contact-details">
+                    <i class="fa-brands fa-github"></i> GitHub</a>
+                <a id="profile-link" href="https://www.linkedin.com/in/dylan-tan-hong-kuang/" target="_blank" class="btn contact-details">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a id="profile-link" href="mailto:dylantanhk@gmail.com" target="_blank" class="btn contact-details">
+                    <i class="fa-solid fa-envelope"></i> Send a mail</a>
             </div>
         </section>
     </main>
     <footer class="bottom">
-            <p>DylanTHK Ⓒ 2022</p>
-
+            <p>DylanTHK <i class="fa-regular fa-copyright"></i> 2022</p>
     </footer>
     <script src="app.js"></script>
 </body>
