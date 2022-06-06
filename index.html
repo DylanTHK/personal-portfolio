@@ -9,17 +9,15 @@
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous"
-    />
+        crossorigin="anonymous">
     <link
-        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
         rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
     <link
-        href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
         rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main_portfolio.css">
+        href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap">
+    <link 
+        rel="stylesheet" href="main_portfolio.css">
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
@@ -31,61 +29,93 @@
         </ul>
     </nav>
     <main id="main-doc">
-        <!-- section 1: Welcome -->
+        <!-- section 1: Greeting -->
         <section class="sections" id="welcome-section">
             <img src="https://media-exp1.licdn.com/dms/image/C5103AQFSOkb_B5cRAQ/profile-displayphoto-shrink_800_800/0/1567990424651?e=1654732800&amp;v=beta&amp;t=14deFRNwNIQ9z6MqoECTv15Ciw8M0KxzkSdOVCmoxoc" height="300px" width="300px" alt="profile image" id="profile-photo">
             <h1>Hi, I am Dylan</h1>
             <p>Aspiring Full-stack developer</p>
             <p>Tech & Data enthusiast</p>
         </section>
+
+        <!-- section 2: About Me -->
+        <section class="sections" id="about-section">
+            <p>
+                Mechanical Engineer of 3 years in the Air-conditioning and 
+                Energy industry with a strong interest in automating tasks.
+                <br>
+                As of January 2021, I have been learning programming in my 
+                free time which allowed me to building various interesting 
+                projects and familiarising myself with algorithms.
+                <br>
+                Interests:
+                <ul>
+                    <li>Coding</li>
+                    <li>Climbing</li>
+                    <li>Disc Golf</li>
+                    <li>Golf</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </p>
+        </section>
         
-        <!-- section 2: Project Portfolios -->
-        <section class="sections" id="projects">
-            <h2 class="project-head">Sample Projects</h2>
-            <!-- provide some links to codepen for projects -->
+        <!-- section 3: Skills -->
+         <section class="sections" id="skills-section">
+             <img src="" alt="HTML">
+             <img src="" alt="CSS">
+             <img src="" alt="JAVASCRIPT">
+             <img src="" alt="PYTHON">
+             <img src="" alt="SQL">
+             <img src="" alt="MICROSOFT OFFICE">
+             <img src="" alt="TABLEAU">
+         </section>
+
+        <!-- section 4: Project Portfolios -->
+        <section class="sections" id="projects-section">
+            <h2 class="project-head">Projects</h2>
             <div class="project-grid">
                 <a href="https://codepen.io/dylanthk/pen/KKZRWWj" class="project-tile">
-                    <img src="https://shots.codepen.io/dylanthk/pen/KKZRWWj-800.jpg?version=1649422316" alt="tribute project" target="_blank" class="project-image">
                     <p class="project-title">
-                        <span class="code"><</span>
                         Technical Document
-                        <span class="code">/></span>
                     </p>
                 </a>
-
                 <a href="https://codepen.io/dylanthk/pen/QWammKr" class="project-project-title" class="project-tile">
-                    <img src="https://shots.codepen.io/dylanthk/pen/QWammKr-800.jpg?version=1649327844" alt="tribute project" target="_blank" class="project-image">
-                    <p class="project-title">
-                        <span class="code"><</span>
+                    <p class="project-title">                        
                         Landing Page
-                        <span class="code">/></span>
                     </p>
                 </a>
-
                 <a href="https://codepen.io/dylanthk/pen/NWXyxyG" class="project-project-title" class="project-tile">
-                    <img src="https://shots.codepen.io/dylanthk/pen/NWXyxyG-800.jpg?version=1649164191" alt="tribute project" target="_blank" class="project-image">
                     <p class="project-title">
-                        <span class="code"><</span>
                         Survey Form
-                        <span class="code">/></span>
                     </p>
                 </a>
-
                 <a href="https://codepen.io/dylanthk/pen/Exobdda" class="project-tile">
-                    <img src="https://shots.codepen.io/dylanthk/pen/Exobdda-800.jpg?version=1649083787" alt="tribute project" target="_blank" class="project-image">
                     <p class="project-title">
-                        <span class="code"><</span>
                         Tribute Page
-                        <span class="code">/></span>
                     </p>
                 </a>
             </div>
         </section>
-        
-        <section class="sections" id="contact">
+
+         <!-- section 5: Certificates -->
+         <section class="sections" id="certificates-section">
+            <a href="" class="certificate-link">
+                <p class="project-title">
+                    Technical Document
+                </p>
+            </a>
+         </section>
+
+          <!-- section 6: Experiences -->
+        <section class="sections" id="experiences-section"></section>
+
+        <!-- section 7: Contact -->
+        <section class="sections" id="contact-section">
             <div>
-                <h2>Open to work!</h2>
-                <p>How do you take your coffee?</p>
+                <h2>CONTACT</h2>
+                <p>Open to work!</p>
+                <input type="text">
+                <input type="text">
+                <input type="text">
             </div>
             <div> <!-- include id=profile-link in github, FCC linkedin links -->
                 <a id="profile-link" href="https://codepen.io/dylanthk" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
@@ -96,6 +126,7 @@
     </main>
     <footer class="bottom">
             <p>Dylan Tan Hong Kuang 2022</p>
+
     </footer>
     <script src="app.js"></script>
 </body>
