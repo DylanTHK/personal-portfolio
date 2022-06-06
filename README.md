@@ -1,2 +1,2 @@
 # personal-portfolio
-Personal Portfolio (Web Developer)
+Personal Portfolio (Developer)
