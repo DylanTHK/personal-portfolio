@@ -4,6 +4,7 @@
     --darkText: black;
     --lightText: white;
     --paddingHorizontal: 15rem;
+    --certificateWidth: 310px;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
     font-size: 1.5rem;
-    /* background-color:darkolivegreen; */
+    background-color:blanchedalmond;
 }
 
 @media (max-width: 600px) {
@@ -134,8 +135,9 @@ a {
     padding-bottom: .5rem;
 }
 
-.project-tile p {
-    padding-bottom: 1rem;
+.project-tile > p {
+    padding: 0 2rem 1rem 2rem;
+    font-size: 1.2rem;
 }
 
 .project-logos {
@@ -148,50 +150,70 @@ a {
 
 /* section 5: Certificates */
 .certificates-grid {
-    background-color: blueviolet;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.certificates-grid > a {
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    width: 300px;
-    /* font-size: 16px; */
-    margin: 0 1em;
-    background-color: aqua;
+.certificate-link {
+    display: grid;
+    height: 200px;
+    width: var(--certificateWidth);
+    margin: 1em;
     border-radius: 15px;
+    align-items: center;
 }
 
-#cert-top {
-    background-color: crimson;
-    margin: 0 0;
+.certificate-link > #cert-img {
+    background: white;
+    width: var(--certificateWidth);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-#cert-bot {
-    background-color: blue;
+.certificate-link #cert-text {
+    display: flex;
+    align-items: center;
+    width: var(--certificateWidth);
+    height: 70px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--secondaryColour);
+    color: var(--lightText);
 }
 
 /* section 6: Experiences */
 
 
 /* section 7: Contact */
-#contact {
-    height: 20rem;
+#input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#contact h2 {
-    padding: .5em;
-}
-#contact p {
-    margin: 1.5em;
-}
-
-#contact a{
-    margin: 1em;
+.input-boxes {
+    width: 500px;
+    margin: .5em;
+    height: 3rem;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
 }
 
+.input-boxes::placeholder {
+    padding: .5rem;
+}
+
+#text-message {
+    height: 10rem;
+}
+
+#profile-link {
+    padding: 1rem;
+}
 
 /* section 8: footer */
 footer {

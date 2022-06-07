@@ -262,31 +262,40 @@
             <h2 class="section-head">CERTIFICATES</h2>
             <div class="certificates-grid">
                 <a href="https://www.freecodecamp.org/certification/DylanTanHK/responsive-web-design" target="_blank" class="certificate-link">
-                    <div id="cert-top">
+                    <div id="cert-img"> 
                         <img src="images/fcc.png" style="height:30px" alt="freecodecamp logo">
                     </div>
-                    <div id="cert-bot">
+                    <div id="cert-text">
                         <p class="certification-title">
                             Responsive Web Design</p>
                     </div>
                 </a>
                 <a href="https://certificates.simplicdn.net/share/3084197.pdf" target="_blank" class="certificate-link">
-                    <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
-                    <p class="certification-title">
-                        Tableau Desktop 10
-                    </p>
+                    <div id="cert-img">
+                        <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
+                    </div>
+                    <div id="cert-text">
+                        <p class="certification-title">
+                            Tableau Desktop 10</p>
+                    </div>
                 </a>
                 <a href="https://certificates.simplicdn.net/share/3044505.pdf" target="_blank" class="certificate-link">
-                    <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
-                    <p class="certification-title">
-                        Data Science with Python
-                    </p>
+                    <div id="cert-img">
+                        <img src="images/simplilearn.png" style="height:75px" alt="simplilearn logo">
+                    </div>
+                    <div id="cert-text">
+                        <p class="certification-title">
+                            Data Science with Python</p>
+                    </div>
                 </a>
-                <a href="" target="_blank" class="certificate-link">
-                    <img src="images/sit.png" style="height:75px" alt="SIT logo">
-                    <p class="certification-title">
-                        MEng Tech Sustainable Infrastructure Engineering
-                    </p>
+                <a href="pdf/Credentials.pdf" target="_blank" class="certificate-link">
+                    <div id="cert-img">
+                        <img src="images/sit.png" style="height:75px" alt="SIT logo">
+                    </div>
+                    <div id="cert-text">
+                        <p class="certification-title">
+                            MEng Tech Sustainable Infrastructure Engineering</p>
+                    </div>
                 </a>
             </div>
          </section>
@@ -304,11 +313,11 @@
         <!-- section 7: Contact -->
         <section class="sections" id="contact-section">
             <h2 class="section-head">CONTACT</h2>
-            <div>
+            <div id="input-container">
                 <p>Open to collaborate and work!</p>
-                <input id="contact-name" type="text" placeholder="Name">
-                <input id="contact-email" type="text" placeholder="Email">
-                <input id="contact-message" type="text" placeholder="Message">
+                <textarea name="name" id="contact-name" class="input-boxes" placeholder="Name"></textarea>
+                <textarea name="email" id="contact-email" class="input-boxes" placeholder="Email"></textarea>
+                <textarea name="message" id="text-message" class="input-boxes" placeholder="Insert message here"></textarea>
             </div>
             <div> <!-- include id=profile-link in github, FCC linkedin links -->
                 <a id="profile-link" href="https://codepen.io/dylanthk" target="_blank" class="btn contact-details">
