@@ -115,19 +115,35 @@ a {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2em;
-    width: 100%;
+    gap: 2rem;
+    width: 80%;
     margin: 0 auto;
     padding: 1rem;
     margin-bottom: 3rem;
-    background-color: aqua;
 }
 
-.project-grid a {
+.project-tile {
+    display: grid;
     color: white;
     background-color: var(--secondaryColour);
-    border-radius: 15px;
-    
+    border-radius: 15px;  
+    padding: 1rem;
+}
+
+.project-tile h3 {
+    padding-bottom: .5rem;
+}
+
+.project-tile p {
+    padding-bottom: 1rem;
+}
+
+.project-logos {
+    display: flex;
+}
+
+.logo-container {
+    padding: 0 1rem;
 }
 
 /* section 5: Certificates */
